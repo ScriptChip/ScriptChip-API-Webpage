@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ScriptChip - Home</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="/">ScriptChip</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/changelog">Changelog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/docs">Documentation</a>
+					</li>
+				</ul>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Your account</button>
+			</div>
+		</nav>
+		
+		<br><br><br><br><br>
+		
+		<center>
+			<img src="img/logo1.png" style="border-radius: 50%;">
+			<br>
+			<br>
+			<br>
+			<h1>ScriptChip - About</h1>
+			<br>
+			<br>
+			<br>
+			<h2>ScriptChip is fast &amp; easy open API that let's you upgrade your apps with random images, image generation, countdowns and many more!</h2>
+			<br>
+			<h3>Useful links:</h3>
+			<p><a href="/docs">Documentation</a> - Learn our API here!</p>
+			<p><a href="/changelog">Changelog</a> - Changes will be announced here!</p>
+			<p><a href="https://discord.gg/j4y4X47">Discord server</a> - If you want to get help, report problems, or just talk with developers join it!</p>
+			<p><a href="/regulation">Regulations</a> - Make sure you don't violate our rules</p>
+			<h3>Developers</h3>
+			<p>JuzioMiecio520 - Main developer, project idea, backend &amp; frontend <a href="#" data-html="true" data-toggle="tooltip" title="Discord: <b>@JuzioMiecio520#8137</b>"><img src="img/discord.png" height=16 width=16></a> <a href="https://github.com/JuzioMiecio520" data-html="true" data-toggle="tooltip" title="Github: <b>JuzioMiecio520</b>"><img src="img/github.png" height=16 width=16></a> <a href="https://github.com/JuzioMiecio520" data-html="true" data-toggle="tooltip" title="Twitter: <b>@JuzioMiecio520</b>"><img src="img/twitter.png" height=16 width=16></a></p>
+			<p>! Wcale nie Matti. - Helper, frontend <a href="#" data-html="true" data-toggle="tooltip" title="Discord: <b>@!   Wcale nie Matti.#2100</b>"><img src="img/discord.png" height=16 width=16></a> <a href="https://github.com/wnm210" data-html="true" data-toggle="tooltip" title="Github: <b>wnm210</b>"><img src="img/github.png" height=16 width=16></a></p>
+		</center>
+
+		<br><br><br>
+		
+		<div class="footer">
+			&copy; ScriptChip Team 2019 - <span id="year"></span> | All rights reserved
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script>
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			});
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ScriptChip - Home</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/d737b40b4d.js" crossorigin="anonymous"></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta property="og:description" content="ScriptChip is fast and easy to use! Sign up now and get it now." />
+		<meta name="keywords" content="discord, api, intelnet, scriptchip, intelnet api, scriptchip, discord api" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="ScriptChip - Fast & Easy API" />
+		<meta property="og:image" content="http://server062122.nazwa.pl/img/logo1.png" />
+		<meta property="og:description" content="ScriptChip is fast and easy to use! Sign up now and get it now." />
+		<meta property="og:url" content="https://scriptchip.pl/" />
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="/">ScriptChip</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/changelog">Changelog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/docs">Documentation</a>
+					</li>
+				</ul>
+				<a tabindex="0" class="btn btn-outline-success my-2 my-sm-0" role="button" data-html=true data-toggle="popover" data-trigger="focus" title='<span class="font-black"><i class="fas fa-exclamation-triangle"></i> Warning</span>' data-content="Users accounts system is still in progress, if you want to get your token <a href='https://discord.gg/j4y4X47'>join our Discord</a>">Your account</a>
+			</div>
+		</nav>
+		
+		<br><br><br><br><br>
+		
+		<div class="alert alert-warning alert-dismissible fade show" role="alert" id="userAccounts">
+			<center>
+				<strong>Warning!</strong> Users accounts system is still being made, if you want to register your app, and get token, <a href="https://discord.gg/j4y4X47">join our Discord</a>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</center>
+		</div>
+		
+		<center>
+			<img src="img/logo1.png" style="border-radius: 50%;">
+			<br>
+			<br>
+			<br>
+			<h1>ScriptChip - Fast &amp; easy</h1>
+			<br>
+			<br>
+			<br>
+			<button type="button" class="btn btn-secondary btn-lg" onClick="parent.location.href = 'https://discord.gg/j4y4X47'">Join our Discord</button>
+		</center>
+		
+		<br><br><br>
+
+		<div class="footer">
+			&copy; ScriptChip Team 2019 - <span id="year"></span> | All rights reserved
+		</div>
+		
+		<div class="alert text-center cookiealert" role="alert">
+			<b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+			<button type="button" class="btn btn-primary btn-sm acceptcookies">
+				I agree
+			</button>
+		</div>
+	</body>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+	
+	<script>
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+		
+		$('.popover-dismiss').popover({
+			trigger: 'focus'
+		})
+	</script>
+
+</html>
